@@ -22,4 +22,9 @@
 
     <script src="{{ asset('backend/js/pages/dashboard.init.js') }}"></script>
 
+     <!--ck editor js-->
+     <script src="{{ asset('backend/libs/ckeditor4/ckeditor.js') }}"></script>
+     <!-- init js -->
+     <script src=" {{ asset('backend/js/pages/form-editor.init.js') }} "></script>
+
     <script src="{{ asset('backend/js/app.js') }}"></script>
