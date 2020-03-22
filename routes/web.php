@@ -73,8 +73,12 @@ Route::get('educationPostGrad', 'PostGradCoursesController@educationPostGrad')->
 Route::group(array('prefix' => 'dashboard/admin/'), function()
     {
         // Events routes
-        Route::get('index', 'DashboardController@inex');
+        Route::get('index', 'DashboardController@index');
 
 
         Route::resource('news', 'UpdateController');
     });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
